@@ -17,9 +17,9 @@ function tellMe(joke) {
 	VoiceRSS.speech({
 		key: 'da5580e5281e48b1bb217f1023eb3b57',
 		src: joke,
-		hl: 'en-us',
-		v: 'Linda',
-		r: 0, 
+		hl: 'en-gb',
+		v: 'Alice',
+		r: 2, 
 		c: 'mp3',
 		f: '44khz_16bit_stereo',
 		ssml: false
@@ -31,7 +31,8 @@ function tellMe(joke) {
 
 async function getJokes() {
 	let joke = '';
-	const apiUrl = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
+/* 	const apiUrl = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
+ */	const apiUrl = 'https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';
 	try {
 		const response = await fetch(apiUrl);
 		const data = await response.json();
