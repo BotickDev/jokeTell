@@ -19,7 +19,7 @@ function tellMe(joke) {
 		src: joke,
 		hl: 'en-gb',
 		v: 'Alice',
-		r: 2, 
+		r: 1, 
 		c: 'mp3',
 		f: '44khz_16bit_stereo',
 		ssml: false
